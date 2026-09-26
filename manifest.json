@@ -1,0 +1,43 @@
+{
+    "id": "42cf8483-f009-4bae-a48d-7a4c6287b93d",
+    "name": "Calculator medie",
+    "description": "Un instrument pentru calcularea mediei la o anumită materie și notele necesare pentru a o putea mări.",
+    "background_color": "#FFC000",
+    "theme_color": "#FFC000",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "icons/icon_normal.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon_normal.svg",
+            "sizes": "512x512"
+        },
+        {
+            "src": "icons/icon_mask.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/icon_mask.svg",
+            "sizes": "512x512",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/icon_monochrome.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "monochrome"
+        },
+        {
+            "src": "icons/icon_monochrome.svg",
+            "sizes": "512x512",
+            "purpose": "monochrome"
+        }
+    ]
+}

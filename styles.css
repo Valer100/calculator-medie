@@ -1,0 +1,308 @@
+@import url(fonts/_styles.css);
+
+::selection {
+    background-color: #E7A000;
+    color: #FFFFFF;
+}
+
+html {
+    --accent-light: #BF9000;
+    --accent-light-link: #806000;
+    --accent-dark: #FFE080;
+    --accent-dark-link: #FFEFBF;
+    --color-bad: #990808;
+    --color-good: #0E7500;
+    font-family: Inter;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 64px;
+    background-color: #F5F5F5;
+    scrollbar-color: #ADADAD #F5F5F5;
+    scrollbar-gutter: stable;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body, body * {
+    font-family: Inter;
+}
+
+h1 {
+    color: #000000AF;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+a {
+    color: var(--accent-light-link) !important;
+    font-family: Inter !important;
+    font-weight: 700 !important;
+    font-size: 12px;
+    transition: opacity 0.3s;
+}
+
+@media ((hover: hover) and (pointer: fine)) {
+    a:hover {
+        text-decoration: underline !important;
+    }
+}
+
+a:active {
+    opacity: 0.8;
+    text-decoration: underline !important;
+}
+
+button {
+    border-radius: 999px;
+    border: none;
+    padding: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 15px;
+    background-color: var(--accent-light);
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter;
+    overflow: hidden;
+    transition: width 0.3s, opacity 0.3s;
+}
+
+button .iconify {
+    color: #FFFFFF;
+    margin-top: auto;
+    margin-bottom: auto;
+    flex-shrink: 0;
+}
+
+div:has(#made-on) {
+    margin: 16px;
+    padding: 8px !important;
+    padding-right: 2px !important;
+    border-radius: 7px;
+    background-color: #E8E8E8;
+    color: #9E9E9E !important;
+    border: #BABABA 1px solid;
+    display: none;
+}
+
+div:empty {
+    display: none;
+}
+
+svg[width="315"] {
+    display: none;
+}
+    
+body {
+    padding-top: 0;
+}
+
+@media ((hover: hover) and (pointer: fine)) {
+    button:hover {
+        opacity: 0.8;
+    }   
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+p {
+    margin: 0px;
+}
+
+@keyframes animation {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.continut {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    opacity: 0;
+    animation: animation 0.5s forwards 0.2s;
+}
+
+input[type="text"], input[type="number"] {
+    width: max-content;
+    border-radius: 7px;
+    border: none;
+    padding: 8px;
+    width: calc(100% - 16px);
+    background-color: #FFFFFF;
+    outline: 1px #21212120 solid;
+    transition: outline-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="number"]:focus {
+    outline: 2px var(--accent-light) solid;
+}
+
+highlight, highlight .iconify {
+    color: var(--accent-light-link)
+}
+
+highlight.bad {
+    color: var(--color-bad);
+}
+
+highlight.good {
+    color: var(--color-good);
+}
+
+.badge {
+    margin-left: 16px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 7px;
+    padding: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    background-color: var(--accent-light-link);
+    color: #FFFFFF;
+}
+
+key {
+    display: flex;
+    align-content: center;
+    width: fit-content;
+    border-radius: 7px;
+    padding: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-size: 10px;
+    opacity: 0.8;
+    background-color: #FFFFFF;
+    color: var(--accent-light);
+}
+
+key .iconify {
+    color: var(--accent-light);
+}
+
+.card {
+    padding: 16px;
+    border-radius: 15px;
+    background-color: color-mix(in hsl shorter hue, #FFFFFF 10%, var(--accent-light) 13%);
+    border: 1px solid color-mix(in hsl shorter hue, #FFFFFF 0%, var(--accent-light) 13%);
+}
+
+#linkCopiat b {
+    display: flex;
+    align-items: center;
+    color: var(--accent-light-link);
+}
+
+#linkCopiat b .iconify {
+    color: var(--accent-light-link);
+}
+
+.iconify {
+    color: #000000;
+    display: inline-block;
+    vertical-align: text-bottom;
+}
+
+.logo {
+    fill: #000000AF;
+}
+
+@media (pointer: fine) {
+    key.pc {
+        display: flex !important;
+    }
+
+    button#calculate, button#delete {
+        padding-top: 10px;
+        padding-bottom: 11px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        --color-bad: #FF8888;
+        --color-good: #7AFFA2;
+        background-color: #212121;
+        color: #eeeeee;
+        color-scheme: dark;
+        scrollbar-color: #66635C #212121;
+    }
+    
+    h1 {
+        color: #FFFFFFAF;
+    }
+    
+    a {
+        color: var(--accent-dark-link) !important;
+    }
+
+    button {
+        background-color: var(--accent-dark);
+        color: #000000;
+    }
+
+    button .iconify {
+        color: #000000;
+    }
+
+    l-ring-2 {
+        --uib-color: var(--accent-dark);
+    }
+
+    div:has(#made-on) {
+        background-color: #303030;
+        border: #404040 1px solid;
+    }
+
+    input[type="text"], input[type="number"] {
+        background-color: #3B3B3B;
+        outline: 1px #FFFFFF35 solid;
+    }
+    
+    input[type="text"]:focus, input[type="number"]:focus {
+        outline: 2px var(--accent-dark) solid;
+    }
+
+    highlight, highlight .iconify {
+        color: var(--accent-dark)
+    }
+
+    .badge {
+        background-color: var(--accent-dark-link);
+        color: #000000;
+    }
+
+    key {
+        background-color: #000000;
+        color: var(--accent-dark);
+    }
+
+    key .iconify {
+        color: var(--accent-dark);
+    }
+
+    .card {
+        background-color: color-mix(in hsl shorter hue, #000000 30%, var(--accent-dark) 11%);
+        border: 1px solid color-mix(in hsl shorter hue, #000000 20%, var(--accent-dark) 11%);
+    }
+
+    .card.error {
+        background-color: color-mix(in hsl shorter hue, #000000 30%, var(--color-bad) 11%);
+        border: 1px solid #FF80801A;
+    }
+
+    .iconify {
+        color: #FFFFFF;
+    }
+
+    #linkCopiat b, #linkCopiat b .iconify {
+        color: var(--accent-dark);
+    }
+
+    .logo {
+        fill: #FFFFFFAF
+    }
+}
