@@ -4,8 +4,8 @@
     "description": "Un instrument pentru calcularea mediei la o anumită materie și notele necesare pentru a o putea mări.",
     "background_color": "#FFC000",
     "theme_color": "#FFC000",
-    "start_url": "/",
-    "scope": "/",
+    "start_url": "/calculator-medie",
+    "scope": "/calculator-medie",
     "display": "standalone",
     "icons": [
         {
