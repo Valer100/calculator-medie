@@ -87,10 +87,6 @@ div:has(#made-on) {
 div:empty {
     display: none;
 }
-
-svg[width="315"] {
-    display: none;
-}
     
 body {
     padding-top: 0;
