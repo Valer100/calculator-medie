@@ -72,21 +72,6 @@ button .iconify {
     margin-bottom: auto;
     flex-shrink: 0;
 }
-
-div:has(#made-on) {
-    margin: 16px;
-    padding: 8px !important;
-    padding-right: 2px !important;
-    border-radius: 7px;
-    background-color: #E8E8E8;
-    color: #9E9E9E !important;
-    border: #BABABA 1px solid;
-    display: none;
-}
-
-div:empty {
-    display: none;
-}
     
 body {
     padding-top: 0;
