@@ -110,7 +110,7 @@ function calculeaza(event) {
                                 if (Math.floor(0.5 + media_reparata) >= media_vruta) {
                                     const areDeja = note.filter(n => n === String(nota_ok)).length >= 1;
                                     const cantitate = note_necesare > 1 ? `${note_necesare} de` : "un";
-                                    ridicari += `<br>- luând ${areDeja ? "încă " : ""}${cantitate} ${nota_ok} (vei avea ${format_potrivit(media_reparata)});`;
+                                    ridicari += `<br>- luând <highlight>${areDeja ? "încă " : ""}${cantitate} ${nota_ok}</highlight> (vei avea <highlight>${format_potrivit(media_reparata)}</highlight>);`;
                                     break;
                                 }
                             }
